@@ -14,3 +14,11 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", { title: "About Us" });
 });
+
+app.get("/contact", (req, res) => {
+  res.render("contact", { title: "Contact Us" });
+});
+
+app.use((req, res) => {
+  res.status(404).render("404", { title: "404 - Page not found" });
+});
