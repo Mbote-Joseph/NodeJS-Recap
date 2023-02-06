@@ -4,6 +4,8 @@ const app = express();
 
 app.listen(port);
 
+app.use(express.static("./public"));
+
 // Register vies engine
 app.set("view engine", "ejs");
 
