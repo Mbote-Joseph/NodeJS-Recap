@@ -15,3 +15,13 @@ ul {
   font-size: 20px;
   display: flex;
 }
+li {
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+li::marker {
+  color: #ee7e63;
+}
