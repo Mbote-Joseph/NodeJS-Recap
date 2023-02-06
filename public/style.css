@@ -1,0 +1,17 @@
+nav {
+  top: 0;
+  left: 0;
+  height: 70px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ee7e63;
+  color: #f9f9f9;
+}
+
+ul {
+  text-decoration: none;
+  color: #f9f9f9;
+  font-size: 20px;
+  display: flex;
+}
