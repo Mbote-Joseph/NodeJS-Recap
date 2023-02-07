@@ -1,10 +1,12 @@
 const express = require("express");
+const morgan = require("morgan");
 const port = 3000;
 const app = express();
 
 app.listen(port);
 
 app.use(express.static("./public"));
+app.use(morgan("dev"));
 
 // Register vies engine
 app.set("view engine", "ejs");
