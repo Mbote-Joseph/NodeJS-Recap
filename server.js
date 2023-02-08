@@ -14,7 +14,12 @@ app.use(morgan("dev"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "Welcome, Joseph Mbote" });
+  const blogs = [
+    { title: "Yoshi finds eggs", snippet: "Lorem ipsum dolor sit amet" },
+    { title: "Mario finds stars", snippet: "Lorem ipsum dolor sit amet" },
+    { title: "How to defeat bowser", snippet: "Lorem ipsum dolor sit amet" },
+  ];
+  res.render("index", { title: "Welcome, Joseph Mbote" }, { blogs });
 });
 
 app.get("/about", (req, res) => {
