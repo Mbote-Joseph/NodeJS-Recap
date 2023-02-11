@@ -18,6 +18,8 @@ app.get("/", (req, res) => {
     { title: "Yoshi finds eggs", snippet: "Lorem ipsum dolor sit amet" },
     { title: "Mario finds stars", snippet: "Lorem ipsum dolor sit amet" },
     { title: "How to defeat bowser", snippet: "Lorem ipsum dolor sit amet" },
+    { title: "How to defeat bowser", snippet: "Lorem ipsum dolor sit amet" },
+    { title: "How to defeat bowser", snippet: "Lorem ipsum dolor sit amet" },
   ];
   res.render("index", { title: "Welcome, Joseph Mbote", blogs });
 });
